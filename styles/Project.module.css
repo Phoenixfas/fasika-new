@@ -1,0 +1,76 @@
+.p{
+    width: 26%;
+    height: 200px;
+    margin: 20px 10px;
+    border: 1px solid #fff;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: width .3s ease-in-out;
+    animation: float alternate 1s ease-in-out infinite;
+}
+@keyframes float{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+.p:hover{
+    width: 30%;
+    transition: width .3s ease-in-out;
+}
+.p_browser{
+    height: 20px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    padding: 0 5px;
+    z-index: 2;
+    border-radius: 0;
+}
+.p_name{
+    flex: 1;
+    margin-left: 5px;
+    font-size: small;
+    font-weight: 200;
+}
+.p_circle{
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    margin: 3px;
+    border-radius: 50%;
+}
+.p_img{
+    width: 100%;
+    transition: all 5s ease;
+}
+.p:hover .p_img{
+    transform: translateY(-50%);
+}
+
+
+@media only screen and (max-width: 480px){
+    .p{
+        width: 60%;
+        height: 200px;
+    }
+    .p:hover{
+        width: 65%;
+        transition: width .3s ease-in-out;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.p{
+        width: 40%;
+        height: 200px;
+    }
+    .p:hover{
+        width: 45%;
+        transition: width .3s ease-in-out;
+    }
+}

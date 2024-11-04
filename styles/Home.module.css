@@ -1,0 +1,48 @@
+
+.bg{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+}
+.bgBlur{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  backdrop-filter: blur(10px);
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.text{
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.text h1{
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+

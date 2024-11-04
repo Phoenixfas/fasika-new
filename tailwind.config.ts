@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: '#FFCC00', // Adjust color based on image
+        accent: '#00FFCC', 
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
