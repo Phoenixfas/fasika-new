@@ -5,9 +5,11 @@ import style from "../styles/Message.module.css";
 export default function Message() {
   const formRef = useRef<HTMLFormElement>(null);
   const [done, setDone] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    setLoading(true);
     emailjs
       .sendForm(
         "service_7qzgs2r",
@@ -18,15 +20,24 @@ export default function Message() {
       .then(
         (result) => {
           console.log(result.text);
+          setLoading(false);
           setDone(true);
+          setTimeout(() => {
+            setDone(false);
+          }, 5000);
         },
         (error) => {
+          setLoading(false);
           console.log(error.text);
         }
       );
   };
   return (
     <>
+        {done && (
+          <p className={style.m_done}>Your message has been sent. Thank you!</p>
+        )}
+        {loading && <p>Loading...</p>}
       <form className={style.message} ref={formRef} onSubmit={handleSubmit}>
         <input
           className={style.input}
@@ -53,9 +64,6 @@ export default function Message() {
           rows={5}
         />
         <button className={style.btn}>Send</button>
-        {done && (
-          <p className={style.m_done}>Your message has been sent. Thank you!</p>
-        )}
       </form>
     </>
   );

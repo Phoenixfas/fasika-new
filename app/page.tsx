@@ -73,7 +73,7 @@ export default function Home() {
             animate="visible"
             exit="exit"
           >
-            <h1>እንብላ!</h1>
+            <h1>HOVER</h1>
           </motion.div>
         )}
       </AnimatePresence>

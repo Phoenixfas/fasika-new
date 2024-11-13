@@ -52,7 +52,7 @@ export default function Mesob() {
       //   scale: 0.9,
       //   transition: { duration: 0.3 },
       // }}
-      onClick={setMesobOpen}
+      onHoverStart={setMesobOpen}
     >
       <motion.img
         src="/images/Cap.svg"

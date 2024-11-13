@@ -9,10 +9,10 @@ export default function Profile() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 1.5 }}
     >
-      <img src="/images/menu/Profile.jpg" alt="Profile" />
+      <img src="https://avatars.githubusercontent.com/u/72998972?v=4" alt="Profile" />
       <div className={style.profileDetail}>
         <h3>Fasika Dagnachew</h3>
-        <p>Digital Craftsman ( Developer / Designer / 3D Artist )</p>
+        <p>Full-Stack Developer / 3D Artist</p>
       </div>
     </motion.div>
   );

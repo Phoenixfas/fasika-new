@@ -87,11 +87,11 @@ export default function Modal() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
             >
-              <h3>Hello I&apos;m a full-stack developer based in Ethiopia! </h3>
+              <h3>Welcome to my portfolio</h3>
             </motion.div>
             <Profile />
             <Bio />
-            <h3> Demo Projects </h3>
+            <h3> Projects Done </h3>
             <div className={style.container}>
               {projects.map((project) => (
                 <Project key={project.id} id={project.id}  project={project} />

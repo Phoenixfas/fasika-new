@@ -12,41 +12,29 @@ export default function Bio() {
       <div className={style.bioBox}>
         <h3>Work</h3>
         <p>
-          Fasika is a freelance and a full-stack developer based in Addis Ababa
-          with a passion for creating beautiful and functional web applications.
-          He has worked on a wide range of projects, from small one-page
-          websites to large multi-page applications. When not online, he loves
-          messing around with 3d modelling and animation.
+          I'm Fasika Dagnachew, an innovative Full-Stack Developer with a strong background in building responsive and dynamic web applications. With expertise in both front-end and back-end technologies, I am dedicated to creating efficient and visually engaging digital solutions.
         </p>
       </div>
       <div className={style.bioBox}>
         <h3>Bio</h3>
         <p>
-          <span>2003 :</span> Born in Addis Ababa (አዲስ አበባ), Ethiopia.
-        </p>
-        <p>
-          <span>2020/21 :</span> Finished highschool at School of Aygoda (saris
-          campus).
-        </p>
-        <p>
-          <span>2022 :</span> Joined Addis Ababa institute of Technology(AAiT)
-          as a software engineering student.
+          I’m a passionate developer based in Addis Ababa, Ethiopia, with experience across various industries, including tourism, events, and logistics. My journey began in front-end development and evolved into full-stack development, allowing me to bring comprehensive solutions to my clients. Recently, I held the role of Chief Technology Officer (CTO) at Afriopia Unified Solutions, where I led a team of developers and played a critical role in project success.
         </p>
       </div>
+      
       <div className={style.bioBox}>
         <h3>Proficiency</h3>
         <p className={style.skill}>
-          Html, CSS, Javascript, React, React-Native, Node, Express, MongoDB,
-          GraphQL
+          Html, CSS, Javascript, React, React-Native, Node, Express, MongoDB, GraphQL, Next.js, Three.js, Blender, TypeScript, Tailwindcss 
         </p>
       </div>
-      <div className={style.bioBox}>
+      {/* <div className={style.bioBox}>
         <h3>I ❤</h3>
         <p>
           Music, Watching Movies, Playing Games, Photography, 3d Animating,
           Coding
         </p>
-      </div>
+      </div> */}
     </motion.div>
   );
 }
