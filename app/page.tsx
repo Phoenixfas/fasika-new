@@ -62,6 +62,7 @@ export default function Home() {
         className={styles.bg}
         onClick={mesobOpen ? setMesobOpen : null}
       />
+      
       <Tibeb />
       <TibebDiag />
       <AnimatePresence>
